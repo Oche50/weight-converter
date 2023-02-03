@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+
+    <style>
+        .card{
+            height: 100px;
+            width: 175px;
+            border: 1px solid black;
+            margin-bottom: 2px;
+            margin-top: 3px;
+            padding-top:1.5px;
+            border-radius: 2px;
+        }
+      
+        input{
+            height: 40px;
+            border-radius: 2px;
+        }
+         .red{
+            background-color: red;
+            color: white;
+            
+        }
+        .green{
+            background-color: green;
+            color: white;
+        }
+        .blue{
+            background-color: blue;
+            color: white;
+        }
+        /* #output{
+          margin-left:600px;
+
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weight Converter</h1>
+      <form action="">
+        <div class="form-group">
+          <input id="lbsInput" type="number" placeholder="Enter Pounds..." />
+        </div>
+      </form>
+      <div id="output">
+        <div class="card red">
+          <div class="card-block">
+            <h4>Grams:</h4>
+            <div id="gramsOutput"></div>
+          </div>
+        </div>
+        <div class="card green">
+          <div class="card-block">
+            <h4>KiloGrams:</h4>
+            <div id="kgOutput"></div>
+          </div>
+        </div>
+        <div class="card blue">
+          <div class="card-block">
+            <h4>Ounces:</h4>
+            <div id="ozOutput"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
